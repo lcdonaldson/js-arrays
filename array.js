@@ -45,8 +45,8 @@
 
     // 5. Sort the inventors by years lived
     const yearsLived = inventors.sort(function (a, b) {
-      prevInventor = inventor.passed - inventor.year;
-      nextInventor = inventor.passed - inventor.year;
+      prevInventor = a.passed - a.year;
+      nextInventor = b.passed - b.year;
       return prevInventor > nextInventor ? -1 : 1;
     });
     console.table(yearsLived);
@@ -57,6 +57,12 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const alpha = people.sort((lastOne, nextOne) => {
+      const [aLast, aFirst] = lastOne.split(', ');
+      const [bLast, bFirst] = nextOne.split(', ');
+      return aLast > bLast ? 1 : -1;
+    });
+    console.log(alpha);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
