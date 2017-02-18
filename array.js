@@ -67,3 +67,8 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    
+    // 9. Adding to arrays.
+    var myArray = ['um', 'dois', 'tres'];
+    array_add = myArray.push('quatro', 'cinco', 'seis', 'sete', 'oito', );
+    console.log(myArray);
