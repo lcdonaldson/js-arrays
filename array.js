@@ -70,5 +70,9 @@
     
     // 9. Adding to arrays.
     var myArray = ['um', 'dois', 'tres'];
-    array_add = myArray.push('quatro', 'cinco', 'seis', 'sete', 'oito', );
+    array_add = myArray.push('quatro', 'cinco', 'seis', 'sete', 'oito');
     console.log(myArray);
+    
+    // 10. Removing from an array with pop.
+    var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+    array_remove = myArray.pop();
