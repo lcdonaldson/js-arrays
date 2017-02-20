@@ -70,9 +70,17 @@
     
     // 9. Adding to arrays.
     var myArray = ['um', 'dois', 'tres'];
+    // *** SOLUTION ***
     array_add = myArray.push('quatro', 'cinco', 'seis', 'sete', 'oito');
     console.log(myArray);
     
     // 10. Removing from an array with pop.
     var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+    // *** SOLUTION ***
     array_remove = myArray.pop();
+
+    // 11. Slicing.
+    var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+    // *** SOLUTION ***
+    array_slice = myArray.slice(3, 4);
+    console.log(array_slice);
