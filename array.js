@@ -88,5 +88,6 @@
     // Sort alphabetically
     var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
     // *** SOLUTION ***
-    array_slice = myArray.sort();
-    console.log(array_slice);
+    array_sort = myArray.sort();
+    console.log(array_sort);
+
