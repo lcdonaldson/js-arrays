@@ -90,4 +90,9 @@
     // *** SOLUTION ***
     array_sort = myArray.sort();
     console.log(array_sort);
-
+    
+    // Add a new item to the middle of the list
+    var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+    // *** SOLUTION ***
+    array_stitch = myArray.splice(4, 0, "quatro e meia");
+    console.log(myArray);
