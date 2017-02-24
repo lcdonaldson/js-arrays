@@ -96,3 +96,9 @@
     // *** SOLUTION ***
     array_stitch = myArray.splice(4, 0, "quatro e meia");
     console.log(myArray);
+
+    // Reverse the order of the array
+    var myArray = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito'];
+    // *** SOLUTION ***
+    array_stitch = myArray.reverse();
+    console.log(myArray);
