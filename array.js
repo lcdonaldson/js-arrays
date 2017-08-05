@@ -102,3 +102,24 @@
     // *** SOLUTION ***
     array_stitch = myArray.reverse();
     console.log(myArray);
+
+    var dog = [ 
+                {id: "1", name: "jed"}, 
+                {id: "2", name: "rod"}, 
+                {id: "3", name: "rover"}, 
+                {id: "4", name: "coco"}, 
+                {id: "5", name: "ed"}, 
+                {id: "6", name: "cozzmo"}, 
+                {id: "7", name: "taffy"}, 
+                {id: "8", name: "kibbers"}, 
+                {id: "9", name: "rufus"}, 
+                {id: "10", name: "red"}, 
+                {id: "11", name: "beasly"}, 
+                {id: "12", name: "mutt"}, 
+                {id: "13", name: "jeff"}, 
+                {id: "14", name: "tank"}, 
+                {id: "15", name: "toto"} 
+              ];
+
+    console.table(dog);
+
