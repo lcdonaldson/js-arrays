@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <style>
+        ul{padding-left: 0.5rem;}
+        li{list-style-type: none;}
+    </style>
+    <div>
+        <h2>Our latest pet profile</h2>
+        <ul id="profiles"></ul>
+    </div>
+    
+    <script>
+        // ideally, you want to break this into its own js file and iterate over
+        // the different instances of new cats.
+
+        class Cat {
+            constructor(name, breed, age, hairLength) {
+                this.name = name;
+                this.breed = breed;
+                this.age = age;
+                this.hairLength = hairLength;
+            }
+
+            profile() {
+                console.log(`My name is ${this.name}, and I am a ${this.breed} cat. I am ${this.age} years old, and my hair is ${this.hairLength} inches long`);
+            }
+        }
+
+        const feline = new Cat("Milo", "Siamese", 4, 3);
+        let name = feline.name;
+        let breed = feline.breed;
+        let age = feline.age;
+        let hair = feline.hairLength;
+
+        let x = [];
+        x.push(name, breed, age, hair);
+
+
+        document.getElementById("profiles").innerHTML = ('<li> Name: ' + name + '</li>' + '<li> Breed: '
+            + breed + '</li>' + '<li> Age: ' + age + '</li>' + '<li> Hair: ' + hair + '</li>');
+    </script> 
+</body>
+</html>
