@@ -3,6 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Array Cardio 💪</title>
+  // some jQuery just for fun!
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('#myDiv').click(function() {
+        console.log('CSS is my favorite language');
+        $("#myDiv").text(function () {
+          return $(this).text().replace("Try this!", "Hello Everyone");
+        });
+      });
+    });
+  </script>
 </head>
   <style>
     body {
@@ -15,6 +27,7 @@
     }
   </style>  
 <body>
+  <div id="myDiv">Try this</div>
   <p>Psst: have a look at the JavaScript Console 💁</p>
   <script src="array.js"></script>
 </body>
