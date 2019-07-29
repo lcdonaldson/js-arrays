@@ -52,6 +52,12 @@
     console.table(yearsLived);
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+
+        const myFunction = () => { 
+            window.open("https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris",  "_top"); 
+        };
+    
+        
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
 
