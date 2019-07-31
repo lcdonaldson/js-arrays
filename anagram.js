@@ -26,3 +26,12 @@ function cleanstr(str){
 }
 
 console.log(anagrams('!Ana', 'naa!'));
+
+const isPalindrome = (str) => {
+	let newStr = str.split('').reverse().join()
+  if(str === newStr) {
+		return true;
+  } else {
+		return false;
+	}
+}
