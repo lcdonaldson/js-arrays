@@ -35,3 +35,6 @@ const isPalindrome = (str) => {
 		return false;
 	}
 }
+
+console.log(isPalindrome('abcba'));
+
