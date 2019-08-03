@@ -27,6 +27,10 @@ function cleanstr(str){
 
 console.log(anagrams('!Ana', 'naa!'));
 
+// This is an example of a palindrome checker
+// it is simple and it works well, but it is
+// not efficient. Below is a better way.
+
 const isPalindrome = (str) => {
 	let newStr = str.split('').reverse().join()
   if(str === newStr) {
@@ -37,4 +41,20 @@ const isPalindrome = (str) => {
 }
 
 console.log(isPalindrome('abcba'));
+
+//___________________________________________________________
+
+// A more proficient palindrome checker
+
+const isPalindrome = str => {
+ var strLength = str.length;
+ for (var i = 0; i < strLength / 2; i++) {
+   if (str[i] !== str[strLength - 1 - i]) {
+       return false;
+   }
+ }
+ return true;
+}
+
+isPalindrome('abba')
 
